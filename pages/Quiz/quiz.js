@@ -1,4 +1,4 @@
-import { verificarTema, trocarTema } from "../../helpers/tema-helper.js";
+import {trocarTema, verificarTema } from "../../helpers/tema-helper.js";
 
 const botaoTema = document.querySelector(".tema button")
 const assunto = localStorage.getItem("assunto")
@@ -52,7 +52,7 @@ function montarPergunta() {
                 <p>Questão ${pergunta} de 10</p>
 
 
-                <h2>${alterarSinais(quiz.questions[pergunta-1].question)}</h2>
+                <h2>${alterarSinais(quiz.questions[ pergunta-1 ].question)} </h2>
             </div>
             <div class="barra_progresso">
                 <div style="width:${pergunta * 10}%"></div>
